@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin: 20px 0;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 50px;
+      text-align: center;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: white;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="input-group">
+      <label for="roundsInput">Enter Rounds: </label>
+      <input type="number" id="roundsInput" value="5" min="1">
+    </div>
+    <div class="button-group">
+      <button class="button" onclick="navigateTo('computer.html')">Against Computer</button>
+      <button class="button" onclick="navigateTo('playerTwo.html')">Player vs Player</button>
+    </div>
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      const rounds = document.getElementById('roundsInput').value;
+      localStorage.setItem('gameRounds', rounds); // Store rounds in localStorage
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
