@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scoreboard">
+    <p><b>Player 1:</b> <span id="player1Score">0</span> | <b>Player 2:</b> <span id="player2Score">0</span></p>
+  </div>
+  <div class="controls2">
+    <div class="player-controls">
+      <button id="rockButton1">Rock</button>
+      <button id="paperButton1">Paper</button>
+      <button id="scissorsButton1">Scissors</button>
+    </div>
+
+    <div class="divider"></div> <!-- Divider Line -->
+
+    <div class="player-controls">
+      <button id="rockButton2">Rock</button>
+      <button id="paperButton2">Paper</button>
+      <button id="scissorsButton2">Scissors</button>
+    </div>
+    
+    <a href="index.html" class="button">Back</a>
+  </div>
+  <canvas id="threejs-canvas"></canvas>
+
+  <!-- Include THREE.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+  <script type="module" src="main2.js"></script>
+</body>
+</html>
