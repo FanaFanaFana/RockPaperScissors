@@ -5,3 +5,4 @@ export default defineConfig({
     open: true, // Automatically open the browser
   },
 });
+
