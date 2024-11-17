@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "three": "^0.170.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
     "vite": "^5.4.11",
     "vite-plugin-vercel": "^0.0.4"
   }
