@@ -1,16 +1,16 @@
 {
     "rewrites": [
       {
-        "source": "/computer",
+        "source": "/computer.html",
         "destination": "/computer.html"
       },
       {
-        "source": "/playerTwo",
+        "source": "/playerTwo.html",
         "destination": "/playerTwo.html"
       },
       {
         "source": "/(.*)",
-        "destination": "/computer.html"
+        "destination": "/index.html"
       }
     ]
   }
