@@ -5,9 +5,9 @@
   "browserHash": "f6b4f9e4",
   "optimized": {
     "three": {
-      "src": "../../three/build/three.module.js",
+      "src": "../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "cdc83b6e",
+      "fileHash": "e9899568",
       "needsInterop": false
     }
   },
